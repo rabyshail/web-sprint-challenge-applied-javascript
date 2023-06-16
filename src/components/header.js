@@ -52,11 +52,12 @@ const headerAppender = (selector) => {
   if(existingHeader){
     headerContainer.removeChild(existingHeader);
   }
-  const header = Header();
+  const header = Header('Bloomtech Times', 'June 16, 2023', '87°');
   headerContainer.appendChild(header);
 };
 window.addEventListener("DOMContentLoaded", () => {
   headerAppender(".header-container")
-})
+}) // where are the words??????
+// typed them in
 
 export { Header, headerAppender }
